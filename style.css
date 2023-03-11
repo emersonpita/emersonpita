@@ -72,8 +72,8 @@ header {
 }
 
 .text-section1 h3 {
+    font-size: 16px;
     color: #607B96;
-    font-size: 18px;
     font-weight: 400;
 }
 
@@ -156,8 +156,77 @@ footer {
 .copyright-container {
     padding: 21px;
     border-left: 1px solid #607B96;
+    text-align: center;
 }
 
 .copyright-container p {
     color: #607B96;
+}
+
+@media (max-width: 850px) {
+
+    .logo {
+        border-right: none;
+    }
+
+    .socials-container p {
+        display: none;
+    }
+
+    .copyright-container {
+        border-left: none;
+    }
+
+}
+
+@media (max-width: 670px) {
+
+    .menu-item {
+        display: none;
+    }
+
+    .menu-item.active {
+        display: block;
+    }
+
+    .text-section1 h1 {
+        font-size: 45px;
+    }
+
+    .text-section1 h2 {
+        font-size: 20px;
+    }
+
+    .text-section1 p {
+        width: 100%;
+    }
+
+    .text-section1 a {
+        width: 100%;
+        box-shadow: 0 20px 30px rgba(67, 217, 173, 0.20);
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .socials-container nav {
+        gap: 40px;
+        margin-bottom: -20px;
+        padding-top: 10px;
+    }
+
+    .socials-container nav a {
+        padding: 0;
+        border-right: none;
+        font-size: 26px;
+    }
+
+    .socials-container nav a:hover {
+        border-bottom: none;
+    }
+
+    .copyright-container {
+        margin-bottom: -5px;
+    }
 }
